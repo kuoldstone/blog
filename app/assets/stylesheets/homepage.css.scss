@@ -1,0 +1,43 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.inner {
+	width: 960px;
+	min-width: 960px;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	border:2px solid green;
+	
+}
+
+#deepgreyColor{
+	color:#708090;
+}
+
+#ligreyColor{
+	color:#3CB371;
+}
+
+#whiteColor{	
+color:#FFFFFF;
+}
+
+#navyColor{
+	background-color:#003377;
+}
+
+#yellowColor{
+	background-color:#DAA520;
+}
+
+.shadowNborder{
+background: #f8f6f5;
+
+border:2px solid blue;
+border-radius:30px;
+box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+
+}
+
+
+

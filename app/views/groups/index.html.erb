@@ -1,0 +1,48 @@
+
+
+<div class="col-md-12" >
+  <div class="group" >
+    <%= link_to("New Category", new_group_path, class: "btn btn-primary pull-right") %>
+  </div><br><br><br><br>
+
+
+  <div class="row-md-4">
+
+   <% @groups.each do |group| %>
+
+      <div>
+
+          <div id="groupBlock">
+            <h2>
+              <div class="container-fluid">
+                <div class="row-fluid">
+                   <div class="col-xs-6">
+                   <%= link_to(group.title, group_path(group),id:"deepgreyColor") %> 
+                   </div>
+                   <div class="col-xs-6">
+                    <%= link_to("Delete", group_path(group),    class: "btn btn-sm btn-default pull-right", 
+                                method: :delete, data: { confirm: "Are you sure?" } )%>
+                    <%= link_to("Edit", edit_group_path(group), class: "btn btn-sm btn-default pull-right")%>
+                    </div>
+                </div>
+              </div>
+            </h2>
+
+            <div class="container-fluid">
+              <div class="row-fluid">
+                <div id="movelittleright">
+                  <% group.posts.each do |post| %>
+                    <div class="row">
+                    <%= link_to(post.title, group_post_path(post.group,post),id:"ligreyColor") %>
+                    </div>             
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+
+      </div>
+  <% end %>
+
+  </div>
+</div>

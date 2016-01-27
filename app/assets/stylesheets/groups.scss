@@ -1,0 +1,32 @@
+// Place all the styles related to the groups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#groupBlock{
+	border:2px solid grey;
+	border-radius:30px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+}
+
+#backgroundBlock{
+	background-color:#F8F8FF
+}
+
+
+
+#check{
+	border:2px solid red;
+}
+
+#movelittleright{
+position:relative ; 
+left:50px;
+
+}
+
+#greyText{
+	color:grey;
+}
+
+
+
